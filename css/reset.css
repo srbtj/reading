@@ -1,0 +1,17 @@
+/** reset start */
+body,p,span,h1,h2,h3,h4,h5,h5,dl,dd,ul,ol,form,table,input,textarea,tr,td,select,th{ margin:0; padding:0;}
+body{ font-family: 'btrap';}
+a{ text-decoration: none;}
+li{ list-style: none;}
+img{ border: none; vertical-align: top;}
+input,textarea{ outline:none;}
+textarea{ overflow:auto; resize:none;}
+/** reset end */
+
+/** public start **/
+.clear{zoom:1;}
+.clear:after{ content:''; display: block; clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+/** public end **/

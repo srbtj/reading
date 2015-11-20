@@ -1,0 +1,119 @@
+/** index css **/
+@font-face {
+    font-family: 'btrap';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+         url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.container{
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header{
+    width:100%;
+    height:15rem;
+    position:relative;
+}
+header #header_h2{
+    font-size:1em;
+    width:22.222%;  /** 260px */
+    height:100%; /** height:240px; */
+    position:absolute;
+    left:0;
+    top:-6.25em;  /** 100px */
+    border-radius:50%;
+    -webkit-box-shadow: 0 5px 5px rgba(255,255,22,.5);
+    -moz-box-shadow: 0 5px 5px rgba(255,255,22,.5);
+    box-shadow: 0 5px 5px rgba(255,255,22,.5);
+
+    -webkit-transition:  1s;
+    -moz-transition:  1s;
+    -ms-transition:  1s;
+    -o-transition:  1s;
+    transition:  1s;
+}
+header #header_h2:hover{
+    width:20.512820%; /* 240px **/
+    height:13.75em;
+    left:0.854700%;
+}
+#header_h2 #logo{
+    width:72.6923%; /** 189px;*/
+    margin:9.275rem auto 0px;
+    font-size:0;
+}
+#header_h2 #logo span{
+    width:10.58201%;
+    height:1.875rem;
+    margin-right:.529%; /** 1px */
+    display: inline-block;
+    background:red;
+    font-size:1em;
+}
+
+#header_h2:hover #logo span:nth-of-type(1){ -webkit-animation:1s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(2){ -webkit-animation:1s .5s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(3){ -webkit-animation:1s 1s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(4){ -webkit-animation:1s 1.5s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(5){ -webkit-animation:1s 2s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(6){ -webkit-animation:1s 2.5s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(7){ -webkit-animation:1s 3s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(8){ -webkit-animation:1s 3.5s logeMove linear alternate infinite;}
+#header_h2:hover #logo span:nth-of-type(9){ -webkit-animation:1s 4s logeMove linear alternate infinite;}
+
+
+header nav{ margin-left: 25.641025%; background:greenyellow; font-size:0;height:100%;}
+header nav a{font-size:1rem;  position:relative; top:1.875rem;}
+
+
+@-webkit-keyframes logeMove {
+    0%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100%
+    {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+    .container{
+        width:1170px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1199px){
+    .container{
+        width:960px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .container{
+        width: 730px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .container{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+}
